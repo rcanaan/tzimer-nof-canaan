@@ -1,18 +1,23 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import nofCanaanLogoTransparent from "/public/temp.svg";
+
 import Room from "@/components/room";
 import Link from "next/link";
-import RoomCard from "@/components/roomCard";
-import Outdoor from "@/components/outdoor";
-import Video from "@/components/video";
+
+import Outdoor from "@/components/OutdoorCards";
+
+import { rooms } from "@/db/rooms";
+import { outdoors } from "@/db/outdoors";
+import RoomCards from "@/components/RoomCards";
+import Video from "@/components/Video";
 
 export default function Home() {
+  rooms;
   return (
     <>
       <div className={styles.all}>
-        <RoomCard />
-        <Outdoor />
+        <RoomCards rooms={rooms} />
+        <Outdoor outdoors={outdoors} />
         <Video />
       </div>
     </>

@@ -1,29 +1,24 @@
 import React from "react";
-import styles from ".../page.module.css";
+import styles from "./page.module.css";
+import { RoomId, rooms } from "@/db/rooms";
+import Image from "next/image";
 
 export default function RoomPage({
-  params: { roomId },
+  params: { id },
 }: {
-  params: { roomId: string };
+  params: { id: RoomId };
 }) {
   return (
-    <div
-      className="card"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "200px",
-        backgroundColor: "#eee",
-        borderRadius: "8px",
-        textDecoration: "none",
-        color: "black",
-        fontSize: "24px",
-        fontWeight: "500",
-        maxWidth: "200px",
-      }}
-    >
-      {roomId}
+    <div className={styles.roomContainer}>
+      <Image
+        src={rooms[id].imageSrc}
+        height={300}
+        width={350}
+        alt={`${rooms[id].pageTitle}  `}
+        className={styles.roomImage}
+      />
+      <h2>{rooms[id].pageTitle}</h2>
+      <p>{rooms[id].description}</p>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.roomContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  backdrop-filter: blur(16px);
+  align-items: center;
+}
+
+.roomImage {
+  border-radius: 0.375rem;
+}
+.roomContainer h2 {
+  margin-top: 2.05rem;
+  color: rgb(241 245 249);
+}
+.roomContainer p {
+  margin-top: 0.5rem;
+  color: rgb(241 245 249);
+}
