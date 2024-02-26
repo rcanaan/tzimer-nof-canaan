@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 // import styles from "../app/layout.module.css";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -28,6 +28,10 @@ export default function Header() {
 
   return (
     <>
+      <head>
+        <link rel="shortcut icon" href="/nofCanaanIcon.ico" />
+      </head>
+
       <header
         className={styles.header}
         style={{ backgroundImage: `url(${imagePaths[currentImageIndex]})` }}
@@ -52,16 +56,20 @@ export default function Header() {
             MENU
           </button>
           {/* mainLogo as component */}
+
           <div className={styles.logoContainer}>
-            <Image
-              src={nofCanaanLogoTransparent}
-              alt="Nof Canaan Logo"
-              width={150}
-              height={150}
-            />
+            <Link href="/">
+              <Image
+                src={nofCanaanLogoTransparent}
+                alt="Nof Canaan Logo"
+                width={150}
+                height={150}
+              />
+            </Link>
           </div>
+
           <Link href="https://www.booking.com/searchresults.he.html?aid=318615&label=Hebrew_Israel_HE_IL_29562091225-P2ZgyYwfHvP_1cUgTwurGAS217274481245%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55168806993%3Atidsa-321568232789%3Alp2376%3Ali%3Adec%3Adm&gclid=Cj0KCQiA5-uuBhDzARIsAAa21T9vXNNea3oam-bdqKYBG0k-NwK6ryqJ7fpxlXaZYJPUoDSBxjMbIOAaAlAJEALw_wcB&highlighted_hotels=325574&redirected=1&city=900049179&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=c6f9a76c51f8fc0fc3e06022cc2384dd?">
-            <button className={styles.menuButton}>RESERVE NOW</button>
+            <button className={styles.menuButton}>RESERVE NOW </button>
           </Link>
         </div>
         <main className={styles.main}>
@@ -73,7 +81,7 @@ export default function Header() {
               GET STARTED <i className="fas fa-chevron-right"></i>
             </button>
           </div>
-          <div className={styles.coordinate}>3.2028° N, 73.2207° E</div>
+          {/* <div className={styles.coordinate}>3.2028° N, 73.2207° E</div> */}
         </main>
       </header>
     </>
