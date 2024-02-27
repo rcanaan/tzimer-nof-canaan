@@ -4,8 +4,7 @@ Welcome to the GitHub repository for the **Tzimer Nof Canaan** website. This pro
 
 ## Live Website
 
-Check out the live version of our website here: [Tzimer Nof Canaan]([#](https://tzimer-nof-canaan-3etd-gkncrn9pq-rinat-canaans-projects.vercel.app/))
-
+Check out the live version of our website here: [Tzimer Nof Canaan]((https://tzimer-nof-canaan-3etd-gkncrn9pq-rinat-canaans-projects.vercel.app/))
 *Please note that the website is a work in progress, and we continuously update and improve it.*
 
 ## About Tzimer Nof Canaan
