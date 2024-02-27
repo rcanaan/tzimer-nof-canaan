@@ -11,10 +11,3 @@
   position: relative;
   overflow: visible; /*for making a long page*/
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
-}
