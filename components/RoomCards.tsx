@@ -6,14 +6,15 @@ import { Rooms } from "@/db/rooms";
 type RoomCardsProps = {
   rooms: Rooms;
 };
+
 export default function RoomCards({ rooms }: RoomCardsProps) {
   return (
     <>
-      <h2 className={styles.mainHeading}>The Rooms</h2>
-      <div className={styles.roomsContain}>
+      <h2 className={styles["room-cards__main-heading"]}>The Rooms</h2>
+      <div className={styles["room-cards"]}>
         {Object.entries(rooms).map(([roomId, room]) => (
           <Link
-            className={styles.card}
+            className={styles["room-card"]}
             key={roomId}
             href={`/rooms/${roomId}`}
             passHref
@@ -22,10 +23,10 @@ export default function RoomCards({ rooms }: RoomCardsProps) {
               src={room.imageSrc}
               height={300}
               width={350}
-              alt={`${roomId} room `}
-              className={styles.roomImage}
+              alt={`${roomId} room`}
+              className={styles["room-card__image"]}
             />
-            <div className={styles.roomId}>{roomId}</div>
+            <div className={styles["room-card__id"]}>{roomId}</div>
           </Link>
         ))}
       </div>

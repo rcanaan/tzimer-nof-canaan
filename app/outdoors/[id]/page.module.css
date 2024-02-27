@@ -1,4 +1,4 @@
-.roomContainer {
+.room-container {
   display: flex;
   flex-direction: column;
   padding-top: 2.75rem;
@@ -7,14 +7,14 @@
   align-items: center;
 }
 
-.roomImage {
+.room__image {
   border-radius: 0.375rem;
 }
-.roomContainer h2 {
+.room-container h2 {
   margin-top: 2.05rem;
   color: rgb(241 245 249);
 }
-.roomContainer p {
+.room-container p {
   margin-top: 0.5rem;
   color: rgb(241 245 249);
 }

@@ -9,13 +9,13 @@ export default function RoomPage({
   params: { id: OutdoorId };
 }) {
   return (
-    <div className={styles.roomContainer}>
+    <div className={styles["room-container"]}>
       <Image
         src={outdoors[id].imageSrc}
         height={300}
         width={350}
         alt={`${outdoors[id].pageTitle}  `}
-        className={styles.roomImage}
+        className={styles["room__image"]}
       />
       <h2>{outdoors[id].pageTitle}</h2>
       <p>{outdoors[id].description}</p>
