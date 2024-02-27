@@ -28,6 +28,8 @@ While the website is not yet complete, we have several exciting features and imp
 - A gallery showcasing the picturesque surroundings and accommodations.
 - Customer reviews and testimonials.
 - A blog section for the latest news and updates about Tzimer Nof Canaan.
+- Integration with Booking.com API to directly update the website calendar.
+- For easy navigation, there will be Google Maps and Waze integration.
 
 ## Contributing
 
