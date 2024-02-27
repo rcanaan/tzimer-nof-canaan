@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from "./header.module.css"; // Make sure this points to your updated CSS module
+import styles from "./Header.module.css"; // Make sure this points to your updated CSS module
 import Image from "next/image";
 import Link from "next/link";
 import nofCanaanLogoTransparent from "/public/temp.svg";
