@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tzimer Nof Canaan
 
-## Getting Started
+Welcome to the GitHub repository for the **Tzimer Nof Canaan** website. This project represents the online presence of our family-run business, Tzimer Nof Canaan, currently under development by our team. Our goal is to showcase our hospitality services and provide an intuitive booking experience for our guests.
 
-First, run the development server:
+## Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the live version of our website here: [Tzimer Nof Canaan](#)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*Please note that the website is a work in progress, and we continuously update and improve it.*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About Tzimer Nof Canaan
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Tzimer Nof Canaan is a family-owned business located in the serene landscapes of Canaan. Our mission is to provide a luxurious and peaceful retreat for travelers seeking to unwind and experience the beauty of nature.
 
-## Learn More
+## Project Stack
 
-To learn more about Next.js, take a look at the following resources:
+This project is built using:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**: A React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications.
+- **React**: A JavaScript library for building user interfaces, ensuring a seamless and dynamic user experience.
+- **TypeScript**: A superset of JavaScript that adds static type definitions, enhancing code quality and readability.
+- **CSS Modules**: A CSS file in which all class names and animation names are scoped locally by default, making sure that styles do not conflict across components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Plans
 
-## Deploy on Vercel
+While the website is not yet complete, we have several exciting features and improvements in the pipeline:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Enhanced booking system for real-time reservations.
+- A gallery showcasing the picturesque surroundings and accommodations.
+- Customer reviews and testimonials.
+- A blog section for the latest news and updates about Tzimer Nof Canaan.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+We welcome contributions from the community! Whether it's a bug report, a feature suggestion, or a pull request, your input is valuable to us. Please refer to our `CONTRIBUTING.md` file for more details on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
