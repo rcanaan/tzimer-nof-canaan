@@ -1,4 +1,4 @@
-import styles from "./ideo.module.css";
+import styles from "./Video.module.css";
 
 export default function Video() {
   return (
