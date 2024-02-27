@@ -9,10 +9,12 @@
   padding: 20px;
 }
 
-.contactInfo {
-  color: rgb(248 250 252);
+.footer__google-maps img {
+  width: 100%; /* Adjust based on your design */
+  border-radius: 0.375rem; /* Optional, for rounded corners */
 }
 
-.address {
+.footer__contact-info,
+.footer__address {
   color: rgb(248 250 252);
 }

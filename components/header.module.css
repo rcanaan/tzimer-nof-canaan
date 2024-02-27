@@ -1,5 +1,5 @@
+/* Header Block */
 .header {
-  /* background-image: `url(${imagePaths[currentImageIndex]}) `; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,7 +7,9 @@
   width: 100%;
   height: 100vh;
 }
-.menuButton {
+
+/* Element: Menu Button */
+.header__menu-button {
   border: 3px solid white;
   padding: 10px 20px;
   font-size: 0.95rem;
@@ -17,12 +19,13 @@
   background: transparent;
   border-radius: 0.375rem;
   display: flex;
-  align-items: center; /* Vertically center flex items */
-  justify-content: center; /* Horizontally center flex items */
-  gap: 8px; /* Adjust the space between the icon and the text */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.getStarted {
+/* Element: Get Started Button */
+.header__get-started {
   border: 3px solid white;
   padding: 10px 20px;
   font-size: 0.95rem;
@@ -32,43 +35,46 @@
   background: transparent;
   border-radius: 0.375rem;
 }
-.menuButton svg {
-  flex-shrink: 0; /* Prevent the SVG from shrinking */
-  width: 24px; /* Set a specific width */
-  height: 40px; /* Set a specific height */
+
+/* Element: Menu Button SVG */
+.header__menu-button-svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 40px;
 }
 
-.logoContainer {
+/* Element: Logo Container */
+.header__logo-container {
   flex: 1;
   text-align: center;
 }
-.mainTitle {
+
+/* Element: Main Title */
+.header__main-title {
   margin-bottom: 200px;
 }
-.main_title {
-  font-size: 2rem;
-  /* margin-top: 2rem; */
 
-  color: #489bb4;
-}
-.mainHeading {
+/* Element: Main Heading */
+.header__main-heading {
   font-size: 2.5rem;
   font-weight: 600;
   padding-bottom: 20px;
 }
-.main {
+
+/* Element: Main Content */
+.header__main {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically in the container */
-  /*align-items: center;  Centers content horizontally in the container */
+  justify-content: center;
   text-align: center;
   color: white;
-  height: 100vh; /* Makes the container take up the full viewport height */
+  height: 100vh;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
-.headline {
+
+/* Element: Headline */
+.header__headline {
   display: flex;
   flex-direction: row;
   padding: 20px;
