@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./page.module.css"; // Ensure this is pointing to the correct CSS module file
+import styles from "./page.module.css";
 import { RoomId, rooms } from "@/db/rooms";
 import Image from "next/image";
 

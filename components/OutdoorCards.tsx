@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./OutdoorCards.module.css"; // Ensure your CSS module is named appropriately
+import styles from "./OutdoorCards.module.css";
 import { Outdoors } from "@/db/outdoors";
 
 type OutdoorCardsProps = {

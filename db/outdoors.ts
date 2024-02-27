@@ -1,4 +1,4 @@
-export type OutdoorId = (typeof outdoorIds)[keyof typeof outdoorIds]; // Type for the keys of roomIds
+export type OutdoorId = (typeof outdoorIds)[keyof typeof outdoorIds];
 export type OutdoorDetails = {
   imageSrc: string;
   pageTitle: string;

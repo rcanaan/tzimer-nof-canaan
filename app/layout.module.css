@@ -1,13 +1,13 @@
 .body {
-  height: 100%; /* Adjust height as needed, 100vh covers the full viewport height */
-  background-image: url("/backg.jpg"); /* Set the background image */
-  background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100%;
+  background-image: url("/backg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed; /*to create parallax*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  overflow: visible; /*for making a long page*/
+  overflow: visible; /*to make long page*/
 }
