@@ -56,7 +56,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <Link href="https://www.booking.com/hotel/il/x-xxps-xx-xc-x-nof-canaan.he.html?aid=304142&label=gen173nr-1FCAQoggI49ANIDlgEaGqIAQGYAQ64ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq2a-a4GwAIB0gIkMzJjZWY0ZTctZWRiZi00MWUyLWEwMDgtZDY3OGU2NzBmZmZm2AIF4AIB&sid=c6f9a76c51f8fc0fc3e06022cc2384dd&checkin=2024-02-27;checkout=2024-02-28;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;soh=1;sr_order=popularity;srepoch=1709067635;srpvid=d60893af1c77048f;type=total;ucfs=1&#no_availability_msg">
+          <Link href="https://www.booking.com/hotel/il/x-xxps-xx-xc-x-nof-canaan.he.html?aid=318615&label=Hebrew_Israel_HE_IL_29562091225-P2ZgyYwfHvP_1cUgTwurGAS217274481245%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55168806993%3Atidsa-321568232789%3Alp1007991%3Ali%3Adec%3Adm&sid=c6f9a76c51f8fc0fc3e06022cc2384dd&all_sr_blocks=32557401_114766732_2_0_0;checkin=2024-02-28;checkout=2024-02-29;dest_id=900049179;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=32557401_114766732_2_0_0;hpos=1;matching_block_id=32557401_114766732_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=32557401_114766732_2_0_0__52650;srepoch=1709110391;srpvid=92013e78fad8001a;type=total;ucfs=1&#hotelTmpl">
             <button className={styles["header__menu-button"]}>
               RESERVE NOW
             </button>
