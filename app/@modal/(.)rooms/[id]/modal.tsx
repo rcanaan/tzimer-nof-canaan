@@ -25,7 +25,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
   return createPortal(
     <div className={styles.modal_backdrop}>
       <dialog ref={dialogRef} className={styles.modal} onClose={onDismiss}>
-        <div className={styles.room}>
+        <div className={styles.modal_content}>
           <Image
             src={rooms[roomId].imageSrc}
             height={300}

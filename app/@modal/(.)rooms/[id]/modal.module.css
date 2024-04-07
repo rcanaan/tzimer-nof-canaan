@@ -1,82 +1,39 @@
-.modal {
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  max-height: 500px;
-  border: none;
-  border-radius: 12px;
-  background-color: white;
-  padding: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-weight: 500;
-}
-
 .modal_backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1050;
+}
+
+.modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  max-height: 500px;
+  overflow-y: auto;
+  position: relative;
 }
 
 .modal_content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.modal_close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.close_button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 48px;
-  height: 48px;
-  background-color: transparent;
-  border: none;
-  border-radius: 15px; /* Circular shape */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 24px; /* Adjust font size as needed */
-}
-
-.close_button:hover {
-  background-color: #eee;
-}
-
-.close_button:after {
-  content: "x";
-  color: black;
-}
-.room {
   display: flex;
   flex-direction: column;
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-  backdrop-filter: blur(16px);
   align-items: center;
+  gap: 10px;
 }
 
 .room__image {
@@ -84,11 +41,37 @@
 }
 
 .room__title {
-  margin-top: 2.05rem;
-  color: rgb(241 245 249);
+  margin: 10px 0;
+  color: #333;
 }
 
 .room__description {
-  margin-top: 0.5rem;
-  color: rgb(241 245 249);
+  color: #555;
+  text-align: center;
+}
+
+.close_button {
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.close_button:hover {
+  background-color: #f0f0f0;
+}
+
+.close_button:after {
+  content: "×";
+  color: #333;
 }
