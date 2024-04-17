@@ -1,20 +1,21 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from "./Header.module.css"; // Make sure this points to your updated CSS module
+import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import nofCanaanLogoTransparent from "/public/temp.svg";
+import { usePathname } from "next/navigation";
 
 const imagePaths = [
   "/backg.jpg",
-  "/panoramicRoomView.jpg",
-  "/IMG-20240209-WA0087.jpg",
-  "/IMG-20240209-WA0089.jpg",
+  // "/panoramicRoomView.jpg",
+  // "/IMG-20240209-WA0087.jpg",
+  // "/IMG-20240209-WA0089.jpg",
 ];
 
 export default function Header() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  const pathname = usePathname();
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagePaths.length);
@@ -62,16 +63,18 @@ export default function Header() {
             </button>
           </Link>
         </div>
-        <main className={styles["header__main"]}>
-          <div className={styles["header__main-title"]}>
-            <h1 className={styles["header__main-heading"]}>
-              Unwind in Luxury: Discover Our Exquisite Hotel and Resort
-            </h1>
-            <button className={styles["header__get-started"]}>
-              GET STARTED <i className="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </main>
+        {pathname === "/" && (
+          <main className={styles["header__main"]}>
+            <div className={styles["header__main-title"]}>
+              <h1 className={styles["header__main-heading"]}>
+                Unwind in Luxury: Discover Our Exquisite Hotel and Resort
+              </h1>
+              <button className={styles["header__get-started"]}>
+                GET STARTED <i className="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </main>
+        )}
       </header>
     </>
   );
