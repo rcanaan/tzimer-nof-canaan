@@ -79,7 +79,7 @@ export default function Header() {
                 Unwind in Luxury: Discover Our Exquisite Hotel and Resort
               </h1>
               <button className={styles["header__get-started"]}>
-                GET STARTED <i className="fas fa-chevron-right"></i>
+                GET STARTED
               </button>
             </div>
           </main>
