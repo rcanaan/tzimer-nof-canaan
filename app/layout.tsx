@@ -29,6 +29,7 @@ export default function RootLayout({
         {modal}
         {children}
         <div id="modal-root" />
+        <div id="modal-outdoor-root" />
         <Footer />
       </body>
     </html>

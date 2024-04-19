@@ -3,7 +3,7 @@
   flex-direction: column;
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(1.5px);
   align-items: center;
 }
 
