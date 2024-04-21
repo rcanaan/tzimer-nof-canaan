@@ -1,0 +1,27 @@
+.room-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #eee;
+  overflow: hidden;
+  min-height: 50vh;
+}
+.room-card__link {
+  text-decoration: none;
+  color: black;
+}
+.room-card__image {
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+.room-card__image:hover {
+  opacity: 0.5;
+}
+.room-card__id {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}

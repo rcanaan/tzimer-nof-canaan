@@ -1,34 +1,26 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client";
 import styles from "./RoomCards.module.css";
 import { Rooms } from "@/db/rooms";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import useScreenSize from "@/hooks/ScreenSize";
+import RoomCardsMobile from "./RoomCardsMobile";
+import RoomCardsDesktop from "./RoomCardsDesktop";
 
 type RoomCardsProps = {
   rooms: Rooms;
 };
 
 export default function RoomCards({ rooms }: RoomCardsProps) {
+  const { width } = useScreenSize();
   return (
     <>
-      <h2 className={styles["room-cards__main-heading"]}>The Rooms</h2>
-      <div className={styles["room-cards"]}>
-        {Object.entries(rooms).map(([roomId, room]) => (
-          <Link
-            className={styles["room-card"]}
-            key={roomId}
-            href={`/rooms/${roomId}`}
-            passHref
-          >
-            <Image
-              src={room.imageSrc}
-              height={300}
-              width={350}
-              alt={`${roomId} room`}
-              className={styles["room-card__image"]}
-            />
-            <div className={styles["room-card__id"]}>{roomId}</div>
-          </Link>
-        ))}
+      <div>
+        <h2 className={styles["room-cards__main-heading"]}>The Rooms</h2>
+        {width > 1023 ? (
+          <RoomCardsDesktop rooms={rooms} />
+        ) : (
+          <RoomCardsMobile rooms={rooms} />
+        )}
       </div>
     </>
   );
