@@ -76,7 +76,7 @@ export default function Header() {
           <main className={styles["header__main"]}>
             <div className={styles["header__main-title"]}>
               <h1 className={styles["header__main-heading"]}>
-                Unwind in Luxury: Discover Our Exquisite Hotel and Resort
+                Unwind in Luxury: <br /> Discover Our Exquisite Hotel and Resort
               </h1>
               <button className={styles["header__get-started"]}>
                 GET STARTED
