@@ -16,8 +16,9 @@ export default function RoomCardsMobile({ rooms }: RoomCardsMobileProps) {
       {/* <div className={styles["room-cards"]}> */}
       <Carousel
         showArrows={true}
-        showThumbs={true}
-        showStatus={false}
+        showThumbs={false}
+        showStatus={true}
+        showIndicators={false}
         autoPlay={false}
         infiniteLoop={true}
         className={styles["room-cards"]}
