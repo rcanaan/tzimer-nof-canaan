@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./RoomCards.module.css";
+import styles from "./RoomCardsDesktop.module.css";
 import { Rooms } from "@/db/rooms";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

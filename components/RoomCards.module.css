@@ -1,57 +1,7 @@
-.room-cards {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 0px;
-  padding: 20px;
-  margin-top: 30px;
-}
-
 .room-cards__main-heading {
   text-align: center;
   margin-top: 16rem;
   font-size: 2.5rem;
   font-weight: 600;
   color: rgb(248 250 252);
-}
-
-.room-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 28%;
-}
-
-.room-card__link {
-  text-decoration: none;
-  color: black;
-}
-
-.room-card__image {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.room-card__image:hover {
-  opacity: 0.5;
-}
-
-.room-card__id {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 8px;
-}
-
-@media (max-width: 600px) {
-  .room-cards {
-    justify-content: space-around;
-  }
-
-  .room-card {
-    width: 80%;
-    margin-bottom: 16px;
-  }
 }

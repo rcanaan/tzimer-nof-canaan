@@ -1,0 +1,32 @@
+.room-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.room-card__image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.room-card__image:hover {
+  opacity: 0.5;
+}
+
+.room-card__id {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+}
