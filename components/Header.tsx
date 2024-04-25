@@ -72,6 +72,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
+        {/* save pathname as variable  & trinary operator : null*/}
         {pathname === "/" && (
           <main className={styles["header__main"]}>
             <div className={styles["header__main-title"]}>
