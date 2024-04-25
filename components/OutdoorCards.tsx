@@ -1,13 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./OutdoorCards.module.css";
-import { Outdoors } from "@/db/outdoors";
+import { outdoors } from "@/db/outdoors";
 
-type OutdoorCardsProps = {
-  outdoors: Outdoors;
-};
-
-export default function OutdoorCards({ outdoors }: OutdoorCardsProps) {
+export default function OutdoorCards() {
   return (
     <>
       <h2 className={styles["outdoor-cards__heading"]}>Outdoor Activities</h2>

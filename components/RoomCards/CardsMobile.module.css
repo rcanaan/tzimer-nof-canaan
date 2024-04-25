@@ -1,18 +1,18 @@
-.room-cards {
+.carousel {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
 
   max-height: 50%;
 }
-.room-card {
+.card {
   background-color: #eee;
   border-radius: 0.5rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.room-card__image {
+.card__image {
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -21,13 +21,13 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.room-card__id {
+.card__id {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem;
 }
 @media only screen and (min-width: 769px) {
-  .room-card {
+  .card {
     margin-left: 5rem;
     margin-right: 5rem;
   }
