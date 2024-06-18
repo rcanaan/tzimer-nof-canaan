@@ -5,3 +5,22 @@
   font-weight: 600;
   color: rgb(248 250 252);
 }
+/* Mobile specific styles */
+@media (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+/* Desktop specific styles */
+@media (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
