@@ -1,21 +1,51 @@
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-  height: 80%;
-  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #51aeca;
-  padding: 30px;
-  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .footer__google-maps img {
-  width: 100%;
-  border-radius: 0.375rem;
+  display: none;
 }
-
+.footer__details {
+}
 .footer__contact-info,
 .footer__address {
   color: rgb(248 250 252);
+  font-size: 1rem;
+}
+
+.footer__contact-info h2,
+.footer__address h2 {
+  font-size: 1.25rem;
+}
+.footer__contact-info {
+  margin-bottom: 20px;
+}
+.footer__address {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 769px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+    background-color: #51aeca;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .footer__google-maps img {
+    width: 100%;
+    border-radius: 0.375rem;
+    display: block;
+  }
 }

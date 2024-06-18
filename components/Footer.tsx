@@ -16,16 +16,18 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className={styles["footer__contact-info"]}>
-        <h2>Contact & Reservation</h2>
-        <p>canaani@netvision.net.il</p>
-        <p>054 - 4622258</p>
-      </div>
+      <div className={styles["footer__details"]}>
+        <div className={styles["footer__contact-info"]}>
+          <h2>Contact & Reservation</h2>
+          <p>canaani@netvision.net.il</p>
+          <p>054 - 4622258</p>
+        </div>
 
-      <div className={styles["footer__address"]}>
-        <h2>Address</h2>
-        <p>25 Nahal Ashalim, Kfar Adumim, 90618</p>
-        <p>054 - 4622258</p>
+        <div className={styles["footer__address"]}>
+          <h2>Address</h2>
+          <p>25 Nahal Ashalim, Kfar Adumim, 90618</p>
+          <p>054 - 4622258</p>
+        </div>
       </div>
     </div>
   );
